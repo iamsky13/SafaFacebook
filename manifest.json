@@ -16,7 +16,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.facebook.com/"
+        "https://www.facebook.com/",
+        "https://www.facebook.com/?ref=logo"
       ],
       "js": [
         "src/inject/inject.js"

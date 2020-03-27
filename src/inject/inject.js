@@ -2,7 +2,7 @@ setInterval(function() {
     		if(document.readyState === "complete"){
 			runScript();
 		}	
-}, 1);
+}, 1000);
 
 
 function findAncestor (el, cls) {
@@ -21,9 +21,10 @@ function runScript(){
 		var date = new Date(eleList[i].textContent);
 		
 		if(date<GetThresHoldDate()){
-			console.log("removed post from:"+ date)
+			
 			var remEle=document.querySelector('[aria-labelledby="'+eleList[i].id+'"]');
 			if(remEle){
+			console.log("removed post from:"+ date);
 			findAncestor(remEle,'_4ikz').remove();}
 		}
 	}
