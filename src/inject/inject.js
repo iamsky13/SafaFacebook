@@ -2,7 +2,7 @@ setInterval(function() {
     		if(document.readyState === "complete"){
 			runScript();
 		}	
-}, 1000);
+}, 3000);
 
 
 function findAncestor (el, cls) {
